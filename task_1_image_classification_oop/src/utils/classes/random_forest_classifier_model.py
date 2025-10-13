@@ -1,7 +1,7 @@
 from .mnist_classifier_interface import MnistClassifierInterface
 from sklearn.ensemble import RandomForestClassifier
 
-class RandomForestClassifier(MnistClassifierInterface):
+class RandomForestClassifierModel(MnistClassifierInterface):
     """Implementation of classification using a Random Forest."""
     def __init__(self, n_estimators=100, random_state=42):
         self.model = RandomForestClassifier(n_estimators=n_estimators, random_state=random_state)
