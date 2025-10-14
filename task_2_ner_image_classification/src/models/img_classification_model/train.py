@@ -99,6 +99,13 @@ def train_ic_model(args):
     print(f"Loaded data for {NUM_CLASSES} classes: {CLASS_NAMES}")
     print(f"Train samples: {len(train_df)}, Test samples: {len(test_df)}")
 
+    # Save the label mapping for inference script to use
+    mapping_path = os.path.join(MODEL_ARTIFACTS_DIR, 'ic_label_mapping.txt')
+    with open(mapping_path, 'w') as f:
+        for class_name in CLASS_NAMES:
+            f.write(f"{class_name}\n")
+    print(f"Label mapping saved to {mapping_path}")
+
     # 2. Define Transformations and Datasets
     # Standard normalization values for ImageNet pre-trained models
     data_transforms = {
