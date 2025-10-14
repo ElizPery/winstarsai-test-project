@@ -47,3 +47,6 @@ NER_TEMPLATES = [
         "My grandmother used to own a farm with a very noisy {}.",
         "It looks like the brown {} is quietly eating grass.",
     ]
+
+# Pre-trained model name for NER fine-tuning
+MODEL_NAME = "bert-base-uncased"
