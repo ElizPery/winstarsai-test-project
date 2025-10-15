@@ -11,8 +11,8 @@ This project implements a multi-modal pipeline to identify animal species using 
 
 ## **Dataset (Assumed Classes)**
 
-This solution assumes the provided Kaggle dataset contains the following 10 animal classes, which are used throughout the mock data and model definitions:
-['Bear', 'Deer', 'Duck', 'Fox', 'Parrot', 'Rabbit', 'Raccoon', 'Red panda', 'Squirrel', 'Tiger']
+This solution assumes the Kaggle dataset contains the following 10 animal classes, which are used throughout the mock data and model definitions:
+['Bear', 'Deer', 'Duck', 'Fox', 'Parrot', 'Rabbit', 'Raccoon', 'Red panda', 'Squirrel', 'Tiger']. Link of the dataset: https://www.kaggle.com/datasets/giotamoraiti/animal-object-detection-dataset-10-classes/data
 
 ## **Setup and Installation**
 
