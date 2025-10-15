@@ -1,8 +1,12 @@
 import os
+import sys
+
+# Add necessary paths to import inference modules
+sys.path.append(os.path.dirname('src'))
 
 # Import inference functions from the respective modules
-from models.ner_model.inference import infer_animal_from_text
-from models.img_classification_model.inference import infer_class_from_image
+from src.models.ner_model.inference import infer_animal_from_text
+from src.models.img_classification_model.inference import infer_class_from_image
 
 def run_pipeline(text_message: str, image_path: str, confidence_threshold: float = 0.5) -> bool:
     """
